@@ -2,7 +2,7 @@
 
 [Öppna demonstrationen](https://liquidbydesign.github.io/RoadLink-demo/)
 
-En svensk prototyp om delad trafikmedvetenhet. Bilvy och mobilvy, ruttbaserade blåljusscenarier, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell.
+En svensk prototyp om delad trafikmedvetenhet. Bilvy och mobilvy, ruttbaserade blåljusscenarier, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
 
 All trafik och alla blåljuskällor är simulerade. Ingen position samlas in. Inga verkliga trafikvarningar skickas. Verklig bilintegration och trafikkommunikation är ännu inte anslutna.
 

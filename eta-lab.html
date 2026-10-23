@@ -1,0 +1,173 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RoadLink · ETA-labb</title><style>:root{color-scheme:dark;font-family:'Segoe UI',sans-serif;color:#e8f1f5;background:#0a1420;--aqua:#79d8ca;--muted:#98adbd;--line:#2c4052}*{box-sizing:border-box}body{margin:0}a{color:var(--aqua);text-decoration:none}header{padding:22px 5%;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px}header>a:last-child{margin-left:auto;font-size:13px}.logo{font-size:25px;font-weight:800;color:#edf6fa}.logo span{color:var(--aqua)}.badge,.version{font-size:10px;letter-spacing:1.6px;color:var(--muted)}main{max-width:1440px;padding:38px 5%;margin:auto}.heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:30px}.eyebrow{font-size:10px;letter-spacing:1.8px;color:var(--aqua);font-weight:700}h1{font-size:34px;letter-spacing:-1px;margin:10px 0}h2{font-size:17px;letter-spacing:-.3px;margin:7px 0 16px}p{font-size:13px;line-height:1.75;color:var(--muted)}.layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:24px}.controls,.models article,.batch,.method{border:1px solid var(--line);background:#112131;border-radius:13px;padding:22px}.controls{align-self:start}label{font-size:12px;display:block;margin-top:23px;color:#d2e0e9}label:first-of-type{margin-top:12px}output{float:right;color:var(--aqua)}select{display:block;width:100%;margin-top:9px;background:#1b3043;color:#e8f1f5;border:1px solid #3b566c;border-radius:7px;padding:12px;font:inherit}input[type=range]{width:100%;accent-color:var(--aqua);margin:13px 0 5px}small{font-size:10px;line-height:1.6;color:#8ca4b6;display:block}.muted{font-size:12px;min-height:44px}.notice{border-top:1px solid var(--line);margin-top:24px;padding-top:20px}.notice strong{font-size:12px;color:#d1b780}.notice p{font-size:11px}.controls>button{margin-top:24px;width:100%}button{background:var(--aqua);color:#10252a;border:1px solid transparent;border-radius:7px;padding:11px 17px;font:600 12px 'Segoe UI',sans-serif;cursor:pointer}button:hover{filter:brightness(1.1)}button:disabled{opacity:.55;cursor:wait}.secondary{background:#20374a;color:#bed2df;border-color:#3a5367}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #9deedd;outline-offset:3px}.map-card{background:#101f2d;border:1px solid var(--line);border-radius:13px;overflow:hidden}.map-header{padding:15px 18px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px;color:#a7bccb;border-bottom:1px solid var(--line)}#world{display:block;width:100%;max-height:480px}.legend{display:flex;flex-wrap:wrap;gap:10px 18px;padding:14px 18px;font-size:10px;color:#a7bccb;border-top:1px solid var(--line)}.legend span{display:flex;align-items:center;gap:6px}.legend i{display:inline-block;width:8px;height:12px;border-radius:3px}.ego{background:var(--aqua)}.other{background:#8ebcff}.playback{display:flex;align-items:center;gap:14px;margin:16px 0 21px}.playback input{flex:1;width:40px;margin:0}.playback button{white-space:nowrap}.models{display:grid;grid-template-columns:1fr 1fr;gap:16px}.models article{padding:20px;min-width:0}.models h2{font-size:16px}.models p:not(.eyebrow){min-height:45px;font-size:11px;margin-bottom:16px}.status{display:inline-block;font-size:12px;border-radius:5px;padding:8px 10px;background:#263b4b;color:#cfdee6}.status.conflict{color:#ffd09a;background:#51402b}.status.possible{color:#f4d596;background:#453d2b}.status.unknown{color:#e4b6c0;background:#462e40}dl{font-size:11px;margin:0}dl>div{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-top:1px solid var(--line)}dt{color:#8da7bb}dd{margin:0;color:#d8e7ed;font-variant-numeric:tabular-nums}.method{padding:18px 20px;margin-top:16px}.method summary{font-size:12px;color:#bad0df;cursor:pointer}.method p{font-size:12px}.batch{margin-top:28px;display:flex;align-items:center;flex-wrap:wrap;gap:15px}.batch>div:first-child{flex:1}.batch h2{font-size:20px;margin-bottom:8px}.batch p{font-size:12px}.batch>button{white-space:nowrap}.batch #batch-result{width:100%;overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:11px;min-width:590px}th,td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line)}th{color:#9ab3c4;font-weight:500}td{font-variant-numeric:tabular-nums}#batch-result .explanation{font-size:11px;max-width:900px}.benchmark-note{color:#e2c58f}footer{font-size:10px;color:#7991a5;margin:28px 0 0}svg text{font-family:'Segoe UI',sans-serif}@media(max-width:1000px){main{padding:27px 4%}.layout{grid-template-columns:245px minmax(0,1fr);gap:15px}.controls{padding:17px}.heading .version{display:none}.models{grid-template-columns:1fr}.models p:not(.eyebrow){min-height:0}}@media(max-width:720px){header{padding:17px 5%;gap:12px}.logo{font-size:22px}.badge{font-size:8px}.heading h1{font-size:27px}.layout{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}.controls h2,.controls>label:first-of-type,.controls #scenario-note,.notice,.controls>button{grid-column:1/-1}.controls label{grid-column:1;margin:10px 0 0}.controls input{grid-column:2;align-self:center}.controls small{grid-column:1/-1}.controls output{float:none;display:block;margin-top:5px}.controls .notice{margin-top:5px;padding-top:15px}.controls .notice p{margin-bottom:0}.playback{gap:8px}.playback button{font-size:10px;padding:10px}.models{grid-template-columns:1fr 1fr;gap:10px}.models article{padding:14px}.models h2{font-size:14px;min-height:34px}.models .status{font-size:10px;padding:7px}.models dl{font-size:10px}.models dl>div{display:block}.models dd{margin-top:4px}.map-header{font-size:8px;padding:12px}.legend{font-size:9px}.batch{padding:18px}.batch h2{font-size:18px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+.ai-link{display:block;margin:0 0 26px;padding:15px 18px;border:1px solid #465579;border-radius:9px;background:#1b2941;color:#cbbdff;font-size:12px;text-decoration:none}.ai-link:hover{background:#273957}#forecast{display:block;width:100%;max-height:520px}.small-note{font-size:12px;color:#adbed0;line-height:1.8}
+</style><style>
+.layout>*{min-width:0}.batch>*{min-width:0}.eta-chart{display:block;width:100%;min-height:220px}.eta-links{display:flex;gap:18px;flex-wrap:wrap}.eta-story{border-left:3px solid #bfadff;padding:4px 18px;margin:20px 0}.eta-story strong{font-size:18px}.eta-table-wrap{overflow-x:auto;width:100%}table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid #2c4052;white-space:nowrap}th{color:#98adbd;font-weight:500}.eta-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.eta-cards article{border:1px solid #2c4052;background:#112131;border-radius:12px;padding:20px}.eta-cards strong{font-size:23px}.eta-controls label{grid-column:1/-1}.eta-controls select{margin-bottom:12px}.eta-controls p{grid-column:1/-1}.eta-chart text{font-family:'Segoe UI',sans-serif}.eta-warning{color:#efbb70}.eta-status{min-height:24px}@media(max-width:720px){.eta-cards{grid-template-columns:1fr}.eta-chart{min-height:200px}header .badge{display:none}}
+</style></head><body>
+<header><a class="logo" href="index.html">↟ Road<span>Link</span></a><span class="badge">ETA-LABB</span><a href="ai-lab.html">← Till rörelsemodellen</a></header>
+<main><div class="heading"><div><p class="eyebrow">ANKOMSTTID OCH OSÄKERHET</p><h1>När möts våra färdvägar?</h1><p>En lokalt tränad modell jämförs med enkla beräkningar. Samma data, fyra metoder och synliga misslyckanden.</p></div><span class="version">0.5 · LOKAL REGRESSION</span></div>
+<p id="eta-loading" role="status">Läser modell och resultat…</p><div id="eta-loaded" hidden>
+<div class="layout"><aside class="controls eta-controls"><h2>Utforska testfallen</h2><label>Testsvit<select id="eta-suite"><option value="test">Separata testscener</option><option value="shift">Oväntade långa stopp</option></select></label><label>Trafikgrupp<select id="eta-group"><option value="all">Alla</option><option value="flyt">Flyt</option><option value="blandat">Blandat</option><option value="kö">Kö</option></select></label><button id="eta-next">Nästa testpar →</button><p id="eta-scene-info" class="muted"></p><button id="eta-stale" class="secondary" aria-pressed="false">Testa för gamla uppgifter</button><div class="notice"><strong>All trafik är syntetisk.</strong><p>Två oberoende fordon antas vara på väg till samma korsning. Inga verkliga positioner, blåljuskällor eller bilintegrationer används.</p></div><div class="notice"><strong>Inga molnanrop.</strong><p id="eta-training"></p><p>Det lilla försöket kräver ingen GPU. Processens minnesvärde är en ögonblicksbild, inte modellens toppförbrukning.</p></div></aside>
+<section class="experiment"><div class="map-card"><div class="map-header"><span>BLÅLJUSETS TID TILL KORSNINGEN</span><span id="eta-scene-id"></span></div><svg id="eta-chart" class="eta-chart" viewBox="0 0 800 300" role="img" aria-label="Fyra metoder för ankomsttid med intervall och simulatorns verkliga ankomsttid"></svg><div class="legend"><span>● Beräknad ankomst</span><span>━ Tidsintervall</span><span>⋮ Simulatorns facit</span></div></div>
+<div class="eta-story" aria-live="polite"><p class="eyebrow">EXEMPEL PÅ FÖRHANDSINFORMATION · SIMULERAT</p><strong id="eta-message"></strong><p id="eta-pair-info"></p></div>
+<div class="eta-table-wrap"><table><caption>Det här testfallet</caption><thead><tr><th>Metod</th><th>Ankomst om</th><th>Intervall</th><th>Absolut fel</th></tr></thead><tbody id="eta-scene-table"></tbody></table></div>
+<div class="eta-cards"><article><p class="eyebrow">MOTTAGNA UPPGIFTER</p><strong id="eta-distance"></strong><p id="eta-observed"></p></article><article><p class="eyebrow">SIMULATORNS FACIT</p><strong id="eta-truth"></strong><p>Facit används endast för utvärdering. Framtida köer, stopp och verklig ankomsttid är inte modellindata.</p></article></div>
+<details class="method" style="margin-top:20px"><summary>Vad har modellen lärt sig – och vad betyder 90 %?</summary><p>En regulariserad regression lär en korrigering av historikens ankomsttid i logaritmisk skala. Nio indata beskriver återstående färdväg, hastighet, hastighetshistorik, ålder och vägsträckans hastighetsgräns. Tio koefficienter anpassas enbart på träningsscener.</p><p>Regulariseringen väljs på en separat valideringsmängd. Därefter väljs ett intervall med split-conformal-kalibrering på en tredje mängd. Målet är 90 % marginal täckning för nya observationer från samma fördelning. Det är inte 90 % säkerhet för varje enskilt fall, varje trafikgrupp eller ett fordonspar.</p><p>Historikreferensen får både ett fast intervall om ±10 s och samma kalibreringsmetod som den tränade modellen. På så sätt kan bredare intervall jämföras utan att ge inlärningen hela äran. Inga intervall har justerats med testresultaten.</p><p>Framtida stopp varierar slumpmässigt och kan inte förutses exakt från historiken. Sviten med oväntade långa stopp ändrar fördelningen. Då kan täckningen falla kraftigt. Uppgifter äldre än två sekunder ger ingen bedömning för någon metod.</p></details>
+</section></div>
+<section class="batch"><div><p class="eyebrow">HELA TESTMÄNGDEN · INGET URVAL AV LYCKADE FALL</p><h2>Hur mycket hjälper inlärningen?</h2><p id="eta-test-description"></p></div><button id="eta-evaluate">Kör utvärdering lokalt</button><p id="eta-eval-status" class="eta-status" role="status"></p><div id="eta-results" class="eta-table-wrap"></div><p class="benchmark-note">Täckning = andel verkliga ankomster inom intervallet. MAE = genomsnittligt absolut tidsfel. Ett bredare intervall kan öka täckningen och samtidigt göra förhandsinformationen mindre användbar.</p></section>
+<section class="batch" style="margin-top:20px"><div><p class="eyebrow">SAMMA KORSNING · EN FÖRENKLAD TESTREGEL</p><h2>Fler fångade möten – fler falsklarm?</h2><p>Facit räknar ett möte när de verkliga ankomsttiderna skiljer högst 10 s. En metod ger förhandsinformation när fordonens intervall överlappar. Detta testar en regel, inte faktisk kollisionsrisk.</p></div><div id="eta-pairs" class="eta-table-wrap"></div><p id="eta-takeaway" class="eta-warning"></p><p class="benchmark-note">Par med gamla uppgifter räknas separat som avstådda. Antal missar och falsklarm gäller bara bedömda par. Studien använder en enda observation per fordon och mäter därför inte den tidigaste förvarningstiden under en hel körning.</p><button id="eta-export" class="secondary">Hämta försöksresultat som JSON ↓</button></section>
+<footer>RoadLink · ETA-labb 0.5 · Lokal träning och inferens. Syntetiska scenarier, ingen validerad säkerhetsfunktion.</footer></div></main><script>// Synthetic ETA experiment. No future or simulator parameters are predictor inputs.
+const ETA_VERSION='0.5.0';
+const ETA_SEEDS={train:51001,validation:51002,calibration:51003,test:51004,shift:51005};
+const ETA_COUNTS={train:2400,validation:600,calibration:600,test:1000,shift:600};
+function etaRng(seed){let n=seed>>>0;return()=>{n=(1664525*n+1013904223)>>>0;return n/4294967296;};}
+function etaDataset(split,count=ETA_COUNTS[split],seed=ETA_SEEDS[split]){
+ const r=etaRng(seed),rows=[];
+ for(let i=0;i<count;i++){
+  const density=[0,.45,.85][i%3],limit=[30,50,70][Math.floor(r()*3)]/3.6;
+  const desired=limit*(.7+.25*r())*(1-.65*density),distance=150+r()*1850;
+  let speed=Math.max(0,desired+(r()-.5)*5),position=0;
+  const truthHistory=[];
+  for(let j=0;j<=20;j++){
+   const target=j>9&&r()<density*.12?0:desired;
+   speed=Math.max(0,speed+Math.max(-1.5,Math.min(1,(target-speed)*.4)));
+   position+=speed*.5;truthHistory.push({t:-10+j*.5,s:position,v:speed});
+  }
+  const age=i%10===9?2.5+r()*2:r()*1.8,noise=1+r()*5;
+  // Measurements arrive together with a common timestamp age. Coordinates are
+  // remaining distance along the known route, not geographic positions.
+  const history=truthHistory.map(p=>({t:p.t-age,remaining:distance+position-p.s+(r()*2-1)*noise,v:Math.max(0,p.v+(r()*2-1)*.7)}));
+  const observation={limit,age,history};
+  // Move the true vehicle between the last received sample and now. Delayed
+  // observations must not make the simulator freeze the unobserved vehicle.
+  let remaining=distance,s=speed;
+  for(let elapsed=0;elapsed<age;){const dt=Math.min(.5,age-elapsed);s=Math.max(0,s+Math.max(-4*dt,Math.min(2*dt,(desired-s)*.7*dt)));remaining-=s*dt;elapsed+=dt;}
+  remaining=Math.max(1,remaining);
+  let t=0,wait=0,trace=[{t:0,remaining}];
+  const nextFlow=desired*(.8+r()*.4);
+  const stopAt=remaining*(.2+r()*.6);
+  const stopDuration=split==='shift'?40+r()*100:(r()<.15+density*.65?5+r()*(10+35*density):0);
+  let stopped=false;
+  while(remaining>0&&t<1800){
+   if(!stopped&&remaining<=stopAt){wait=stopDuration;stopped=true;}
+   let target=wait>0?0:nextFlow;
+   if(wait>0)wait=Math.max(0,wait-.5);
+   s=Math.max(0,s+Math.max(-2,Math.min(1,(target-s)*.35)));
+   const step=s*.5;
+   if(step>=remaining){t+=remaining/Math.max(s,1e-9);remaining=0;}else{remaining-=step;t+=.5;}
+   if(trace.length===1||t-trace.at(-1).t>=2||remaining===0)trace.push({t,remaining});
+  }
+  rows.push({id:`${split}-${seed}-${i}`,group:['flyt','blandat','kö'][i%3],observation,truth:t,trace});
+ }
+ return rows;
+}
+function etaInputs(o){
+ if(!o||!Array.isArray(o.history)||o.history.length!==21||!Number.isFinite(o.age)||o.age<0||!Number.isFinite(o.limit)||o.limit<=0)throw new TypeError('Invalid ETA observation');
+ for(let i=0;i<o.history.length;i++){
+  const p=o.history[i];if(!['t','remaining','v'].every(k=>Number.isFinite(p[k]))||p.v<0||p.remaining<0||Math.abs(p.t-(-10+i*.5-o.age))>1e-6)throw new TypeError('Invalid ETA history');
+ }
+ if(o.age>2)return null;
+ const h=o.history,last=h.at(-1),mean=h.reduce((s,p)=>s+p.v,0)/h.length;
+ const recent=h.slice(-6).reduce((s,p)=>s+p.v,0)/6,first=h.slice(0,6).reduce((s,p)=>s+p.v,0)/6;
+ const d=Math.max(1,last.remaining-last.v*o.age),base=d/Math.max(2,mean),instant=d/Math.max(1,last.v);
+ const congestion=1-mean/o.limit,logD=Math.log(d/500);
+ const x=[logD,mean/o.limit,last.v/o.limit,(recent-first)/o.limit,h.filter(p=>p.v<1).length/21,congestion*logD,congestion**2,o.age/2,o.limit/20];
+ return {x,base,instant,d,mean};
+}
+function fitEta(rows,lambda){
+ const samples=rows.map(s=>({f:etaInputs(s.observation),y:s.truth})).filter(s=>s.f);
+ const means=samples[0].f.x.map((_,j)=>samples.reduce((s,p)=>s+p.f.x[j],0)/samples.length);
+ const scales=means.map((m,j)=>Math.max(.001,Math.sqrt(samples.reduce((s,p)=>s+(p.f.x[j]-m)**2,0)/samples.length)));
+ const n=means.length+1,a=Array.from({length:n},()=>Array(n+1).fill(0));
+ for(const p of samples){const x=[1,...p.f.x.map((v,j)=>(v-means[j])/scales[j])],y=Math.log(p.y/p.f.base);for(let j=0;j<n;j++){for(let k=0;k<n;k++)a[j][k]+=x[j]*x[k];a[j][n]+=x[j]*y;}}
+ for(let j=1;j<n;j++)a[j][j]+=lambda*samples.length;
+ for(let j=0;j<n;j++){
+  let pivot=j;for(let k=j+1;k<n;k++)if(Math.abs(a[k][j])>Math.abs(a[pivot][j]))pivot=k;
+  [a[j],a[pivot]]=[a[pivot],a[j]];if(Math.abs(a[j][j])<1e-10)throw new Error('Singular fit');
+  const divisor=a[j][j];for(let k=j;k<=n;k++)a[j][k]/=divisor;
+  for(let i=0;i<n;i++)if(i!==j){const factor=a[i][j];for(let k=j;k<=n;k++)a[i][k]-=factor*a[j][k];}
+ }
+ return {version:ETA_VERSION,lambda,means,scales,weights:a.map(row=>row[n]),q:null};
+}
+function predictEta(model,o){
+ const f=etaInputs(o);if(!f)return null;
+ if(model.version!==ETA_VERSION||model.weights.length!==10)throw new TypeError('Incompatible ETA model');
+ const logCorrection=model.weights[0]+f.x.reduce((s,v,j)=>s+(v-model.means[j])/model.scales[j]*model.weights[j+1],0);
+ const point=f.base*Math.exp(Math.max(-3,Math.min(3,logCorrection)));
+ return {point,low:model.q===null?null:point*Math.exp(-model.q),high:model.q===null?null:point*Math.exp(model.q)};
+}
+function conformalQuantile(scores,coverage=.9){
+ if(!scores.length||!(coverage>0&&coverage<1)||scores.some(x=>!Number.isFinite(x)||x<0))throw new TypeError('Invalid calibration scores');
+ const sorted=[...scores].sort((a,b)=>a-b),rank=Math.ceil((scores.length+1)*coverage);
+ if(rank>scores.length)throw new RangeError('Insufficient calibration samples');
+ return sorted[rank-1];
+}
+function calibrateEta(model,rows){
+ const scores=rows.flatMap(s=>{const p=predictEta(model,s.observation);return p?[Math.abs(Math.log(s.truth/p.point))]:[];});
+ const historyScores=rows.flatMap(s=>{const f=etaInputs(s.observation);return f?[Math.abs(Math.log(s.truth/f.base))]:[];});
+ return {...model,q:conformalQuantile(scores),historyQ:conformalQuantile(historyScores),calibrationCount:scores.length,targetCoverage:.9};
+}
+function etaMethods(model,o){
+ const f=etaInputs(o);if(!f)return null;
+ const fixed=t=>({point:t,low:Math.max(0,t-10),high:t+10});
+ return {instant:fixed(f.instant),history:fixed(f.base),historyCalibrated:{point:f.base,low:f.base*Math.exp(-model.historyQ),high:f.base*Math.exp(model.historyQ)},learned:predictEta(model,o)};
+}
+function etaOverlap(a,b){return a.low<=b.high&&b.low<=a.high;}
+function evaluateEta(model,rows){
+ const methods=['instant','history','historyCalibrated','learned'],totals={},groups={};
+ const empty=()=>({count:0,absoluteError:0,covered:0,width:0});
+ const add=(m,p,y)=>{m.count++;m.absoluteError+=Math.abs(p.point-y);m.covered+=Number(y>=p.low&&y<=p.high);m.width+=p.high-p.low;};
+ for(const key of methods)totals[key]=empty();let abstained=0;
+ for(const s of rows){const ps=etaMethods(model,s.observation);if(!ps){abstained++;continue;}groups[s.group]??=Object.fromEntries(methods.map(k=>[k,empty()]));for(const key of methods){add(totals[key],ps[key],s.truth);add(groups[s.group][key],ps[key],s.truth);}}
+ const finish=m=>({count:m.count,mae:m.absoluteError/m.count,coverage:m.covered/m.count,meanWidth:m.width/m.count});
+ const pairs=Object.fromEntries(methods.map(k=>[k,{pairs:0,abstained:0,actualMeetings:0,nonMeetings:0,missed:0,falseAlerts:0}]));
+ // Disjoint adjacent independent vehicle scenes; no pair-level train/test reuse.
+ for(let i=0;i+1<rows.length;i+=2){const a=rows[i],b=rows[i+1],pa=etaMethods(model,a.observation),pb=etaMethods(model,b.observation);for(const key of methods){const m=pairs[key];if(!pa||!pb){m.abstained++;continue;}m.pairs++;const actual=Math.abs(a.truth-b.truth)<=10,alert=etaOverlap(pa[key],pb[key]);m.actualMeetings+=Number(actual);m.nonMeetings+=Number(!actual);m.missed+=Number(actual&&!alert);m.falseAlerts+=Number(!actual&&alert);}}
+ return {total:rows.length,abstained,models:Object.fromEntries(methods.map(k=>[k,finish(totals[k])])),groups:Object.fromEntries(Object.entries(groups).map(([g,ms])=>[g,Object.fromEntries(methods.map(k=>[k,finish(ms[k])]))])),pairs};
+}
+
+const el=id=>document.getElementById(id),fmt=n=>n.toLocaleString('sv-SE',{maximumFractionDigits:1}),pct=n=>fmt(n*100)+' %';
+const names={instant:'Aktuell fart ±10 s',history:'Historik ±10 s',historyCalibrated:'Historik, kalibrerad',learned:'Tränad, kalibrerad'};
+const colors={instant:'#79d8ca',history:'#efbb70',historyCalibrated:'#8abaff',learned:'#bfadff'};
+async function loadEtaArtifacts(){const [m,r]=await Promise.all([fetch('../models/eta-regression.json'),fetch('../docs/eta-results.json')]);if(!m.ok||!r.ok)throw new Error('Kunde inte läsa modellfilerna');return {model:await m.json(),results:await r.json()};}
+async function startEta(){
+ const artifacts = {"model":{"version":"0.5.0","lambda":0.1,"means":[0.5863965094635895,0.5834148541842848,0.5742448112674065,-0.015838873603843538,0.0006834215167548502,0.24356248216905843,0.21322518770725682,0.456982899078963,0.6956018518518375],"scales":[0.642473928313581,0.19920342364767768,0.21120785215127666,0.04528314392426305,0.0066838947048795385,0.31619952605655527,0.1624719720064986,0.2629571401113611,0.22194575942017913],"weights":[0.060266945352742275,-0.016730463644893067,-0.015394408499389603,-0.00819996995163657,0.000039995178767713874,-0.01335209865702776,-0.03823224642784333,0.007450759434237349,0.0031914842784429463,0.022207680153184545],"q":0.2522489899936622,"historyQ":0.27081295701324876,"calibrationCount":540,"targetCoverage":0.9},"results":{"version":"0.5.0","synthetic":true,"counts":{"train":2400,"validation":600,"calibration":600,"test":1000,"shift":600},"seeds":{"train":51001,"validation":51002,"calibration":51003,"test":51004,"shift":51005},"selection":[{"lambda":0.0001,"mae":19.33869533306088},{"lambda":0.001,"mae":19.338659073710428},{"lambda":0.01,"mae":19.339186598925526},{"lambda":0.1,"mae":19.311326598980134},{"lambda":1,"mae":19.421575612244013}],"selectedLambda":0.1,"targetCoverage":0.9,"calibrationCount":540,"trainingDurationMs":187.06,"evaluationDurationMs":96.9529,"modelBytes":736,"fittedCoefficients":10,"modelSha256":"a8cc9c97fc34d9a9ab6b6b7cd00e9a2fd537da639038cd62ed0aa4baaa25f7bf","runtime":"v24.22.1","device":"CPU, single Node.js process; no GPU","memory":{"rssBytes":153325568,"heapUsedBytes":78238112,"note":"Process snapshot after evaluation, not peak model memory"},"test":{"total":1000,"abstained":100,"models":{"instant":{"count":900,"mae":31.762638357415838,"coverage":0.38333333333333336,"meanWidth":19.996048197123148},"history":{"count":900,"mae":20.079189881025172,"coverage":0.4077777777777778,"meanWidth":19.995788465183697},"historyCalibrated":{"count":900,"mae":20.079189881025172,"coverage":0.9066666666666666,"meanWidth":89.91083563987162},"learned":{"count":900,"mae":19.275563656495358,"coverage":0.9,"meanWidth":86.36304817823311}},"groups":{"flyt":{"instant":{"count":300,"mae":11.33334917623757,"coverage":0.61,"meanWidth":19.988144591369437},"history":{"count":300,"mae":11.140983904486745,"coverage":0.5833333333333334,"meanWidth":19.987365395551095},"historyCalibrated":{"count":300,"mae":11.140983904486745,"coverage":0.9866666666666667,"meanWidth":57.34261429895772},"learned":{"count":300,"mae":11.204525083383619,"coverage":0.9666666666666667,"meanWidth":54.3825705259573}},"blandat":{"instant":{"count":300,"mae":25.03666379029201,"coverage":0.3466666666666667,"meanWidth":20},"history":{"count":300,"mae":18.8300896404182,"coverage":0.37,"meanWidth":20},"historyCalibrated":{"count":300,"mae":18.8300896404182,"coverage":0.87,"meanWidth":80.3190618533502},"learned":{"count":300,"mae":18.111366042758522,"coverage":0.87,"meanWidth":77.12333576830532}},"kö":{"instant":{"count":300,"mae":58.917902105718056,"coverage":0.19333333333333333,"meanWidth":20},"history":{"count":300,"mae":30.266496098170585,"coverage":0.27,"meanWidth":20},"historyCalibrated":{"count":300,"mae":30.266496098170585,"coverage":0.8633333333333333,"meanWidth":132.07083076730677},"learned":{"count":300,"mae":28.51079984334392,"coverage":0.8633333333333333,"meanWidth":127.58323824043643}}},"pairs":{"instant":{"pairs":400,"abstained":100,"actualMeetings":22,"nonMeetings":378,"missed":13,"falseAlerts":29},"history":{"pairs":400,"abstained":100,"actualMeetings":22,"nonMeetings":378,"missed":8,"falseAlerts":32},"historyCalibrated":{"pairs":400,"abstained":100,"actualMeetings":22,"nonMeetings":378,"missed":4,"falseAlerts":112},"learned":{"pairs":400,"abstained":100,"actualMeetings":22,"nonMeetings":378,"missed":2,"falseAlerts":112}}},"shift":{"total":600,"abstained":60,"models":{"instant":{"count":540,"mae":94.5338748395618,"coverage":0.018518518518518517,"meanWidth":20},"history":{"count":540,"mae":92.0781708887092,"coverage":0.016666666666666666,"meanWidth":20},"historyCalibrated":{"count":540,"mae":92.0781708887092,"coverage":0.20925925925925926,"meanWidth":95.22848488248253},"learned":{"count":540,"mae":86.54181986633095,"coverage":0.2074074074074074,"meanWidth":91.25031167213272}},"groups":{"flyt":{"instant":{"count":180,"mae":94.01514504826164,"coverage":0.005555555555555556,"meanWidth":20},"history":{"count":180,"mae":95.1703890775558,"coverage":0.005555555555555556,"meanWidth":20},"historyCalibrated":{"count":180,"mae":95.1703890775558,"coverage":0.044444444444444446,"meanWidth":58.70603752113182},"learned":{"count":180,"mae":93.00403579982351,"coverage":0.027777777777777776,"meanWidth":55.70308781342214}},"blandat":{"instant":{"count":180,"mae":89.16466711165255,"coverage":0.027777777777777776,"meanWidth":20},"history":{"count":180,"mae":90.94191192578339,"coverage":0.011111111111111112,"meanWidth":20},"historyCalibrated":{"count":180,"mae":90.94191192578339,"coverage":0.2222222222222222,"meanWidth":89.959400085177},"learned":{"count":180,"mae":87.0030564313046,"coverage":0.19444444444444445,"meanWidth":85.60455102595047}},"kö":{"instant":{"count":180,"mae":100.42181235877094,"coverage":0.022222222222222223,"meanWidth":20},"history":{"count":180,"mae":90.12221166278822,"coverage":0.03333333333333333,"meanWidth":20},"historyCalibrated":{"count":180,"mae":90.12221166278822,"coverage":0.3611111111111111,"meanWidth":137.02001704113854},"learned":{"count":180,"mae":79.61836736786508,"coverage":0.4,"meanWidth":132.44329617702564}}},"pairs":{"instant":{"pairs":240,"abstained":60,"actualMeetings":12,"nonMeetings":228,"missed":5,"falseAlerts":21},"history":{"pairs":240,"abstained":60,"actualMeetings":12,"nonMeetings":228,"missed":6,"falseAlerts":16},"historyCalibrated":{"pairs":240,"abstained":60,"actualMeetings":12,"nonMeetings":228,"missed":2,"falseAlerts":63},"learned":{"pairs":240,"abstained":60,"actualMeetings":12,"nonMeetings":228,"missed":2,"falseAlerts":58}}}}};
+ const {model,results}=artifacts,datasets={test:etaDataset('test'),shift:etaDataset('shift')};
+ let suite='test',group='all',index=0,stale=false,currentResults=results;
+ const filtered=()=>datasets[suite].filter(s=>group==='all'||s.group===group);
+ const aged=o=>stale?{...o,age:3.5,history:o.history.map(p=>({...p,t:p.t+o.age-3.5}))}:o;
+ const interval=p=>`${fmt(p.low)}–${fmt(p.high)} s`;
+ function scene(){
+  const list=filtered(),blue=list[index%list.length],ego=list[(index+1)%list.length],o=aged(blue.observation),p=etaMethods(model,o),ep=etaMethods(model,aged(ego.observation));
+  el('eta-scene-id').textContent=blue.id;el('eta-scene-info').textContent=`Par ${Math.floor(index/2)+1} av ${Math.ceil(list.length/2)} i urvalet. Blåljus: ${blue.group}. Egen bil: ${ego.group}.`;
+  const h=o.history,mean=h.reduce((s,p)=>s+p.v,0)/h.length;
+  el('eta-distance').textContent=fmt(h.at(-1).remaining)+' m i senaste uppgiften';el('eta-observed').textContent=`Fart ${fmt(h.at(-1).v*3.6)} km/h, historikmedel ${fmt(mean*3.6)} km/h. Uppgiften är ${fmt(o.age)} s gammal. Hastighetsgräns ${fmt(o.limit*3.6)} km/h.`;
+  el('eta-truth').textContent=fmt(blue.truth)+' s till korsningen';
+  el('eta-stale').setAttribute('aria-pressed',String(stale));el('eta-stale').textContent=stale?'Använd scenens ursprungliga data':'Testa för gamla uppgifter';
+  if(!p||!ep){el('eta-message').textContent='Uppgifterna är för gamla för en bedömning.';el('eta-pair-info').textContent='Ingen metod ger förhandsinformation när ett fordons uppgifter är äldre än 2 s. Detta betyder inte fri väg.';}else{
+   el('eta-message').textContent=etaOverlap(p.learned,ep.learned)?`Blåljus beräknas nå korsningen om ${interval(p.learned)}.`:'Ingen samtidig passage beräknad av den tränade modellen.';
+   el('eta-pair-info').textContent=`Egen bil, tränat intervall: ${interval(ep.learned)}. Simulatorns tider: blåljus ${fmt(blue.truth)} s, egen bil ${fmt(ego.truth)} s. ${Math.abs(blue.truth-ego.truth)<=10?'Ett möte enligt testregeln.':'Inget möte enligt testregeln.'} En utebliven förvarning betyder inte fri väg.`;
+  }
+  el('eta-scene-table').innerHTML=Object.keys(names).map(k=>`<tr><th scope="row">${names[k]}</th>${p?`<td>${fmt(p[k].point)} s</td><td>${interval(p[k])}</td><td>${fmt(Math.abs(p[k].point-blue.truth))} s</td>`:'<td colspan="3">Avstår · gamla uppgifter</td>'}</tr>`).join('');
+  const max=Math.max(60,blue.truth*1.15,...(p?Object.values(p).map(x=>x.high*1.05):[])),x=t=>180+t/max*590;
+  const svg=[`<rect width="800" height="300" fill="#101f2d"/>`];
+  for(let i=0;i<=4;i++){const t=i*max/4;svg.push(`<path d="M${x(t)} 20V265" stroke="#263c4e"/><text x="${x(t)}" y="288" text-anchor="middle" fill="#98adbd" font-size="11">${Math.round(t)} s</text>`);}
+  svg.push(`<path d="M${x(blue.truth)} 18V265" stroke="#edf6fa" stroke-dasharray="4 5"/><text x="${Math.min(740,x(blue.truth)+5)}" y="16" fill="#edf6fa" font-size="10">Facit</text>`);
+  Object.keys(names).forEach((k,i)=>{const y=55+i*58;svg.push(`<text x="15" y="${y+4}" fill="${colors[k]}" font-size="11">${names[k]}</text>`);if(p)svg.push(`<line x1="${x(p[k].low)}" y1="${y}" x2="${x(p[k].high)}" y2="${y}" stroke="${colors[k]}" stroke-width="9" stroke-linecap="round" opacity=".45"/><circle cx="${x(p[k].point)}" cy="${y}" r="5" fill="${colors[k]}"/>`);else svg.push(`<text x="190" y="${y+4}" fill="#98adbd" font-size="12">Avstår</text>`);});
+  el('eta-chart').innerHTML=svg.join('');
+ }
+ function summary(){
+  const r=currentResults[suite],m=r.models,pa=r.pairs;
+  el('eta-test-description').textContent=`${r.total} hela scener i vald testsvit. ${r.abstained} avstådda på grund av gamla uppgifter. Gruppfiltret ovan påverkar bara exempelvisningen, inte resultaten här.`;
+  el('eta-results').innerHTML=`<table><thead><tr><th>Metod</th><th>Bedömda</th><th>MAE</th><th>Täckning</th><th>Medelbredd</th></tr></thead><tbody>${Object.keys(names).map(k=>`<tr><th scope="row">${names[k]}</th><td>${m[k].count}</td><td>${fmt(m[k].mae)} s</td><td>${pct(m[k].coverage)}</td><td>${fmt(m[k].meanWidth)} s</td></tr>`).join('')}</tbody></table><details><summary>Täckning per trafikgrupp</summary><table><thead><tr><th>Grupp</th><th>Historik, kalibrerad</th><th>Tränad, kalibrerad</th></tr></thead><tbody>${Object.entries(r.groups).map(([g,ms])=>`<tr><th scope="row">${g} (n=${ms.learned.count})</th><td>${pct(ms.historyCalibrated.coverage)}</td><td>${pct(ms.learned.coverage)}</td></tr>`).join('')}</tbody></table></details>`;
+  el('eta-pairs').innerHTML=`<table><thead><tr><th>Metod</th><th>Bedömda par</th><th>Missade möten</th><th>Falska förvarningar</th><th>Avstår</th></tr></thead><tbody>${Object.keys(names).map(k=>{const p=pa[k];return `<tr><th scope="row">${names[k]}</th><td>${p.pairs}</td><td>${p.missed} / ${p.actualMeetings}</td><td>${p.falseAlerts} / ${p.nonMeetings}</td><td>${p.abstained}</td></tr>`;}).join('')}</tbody></table>`;
+  el('eta-takeaway').textContent=suite==='shift'?`Vid oväntade långa stopp faller den tränade modellens täckning till ${pct(m.learned.coverage)}. Kalibreringen kan inte lova 90 % när fördelningen ändras.`:`Tränat tidsfel: ${fmt(m.learned.mae)} s mot historikens ${fmt(m.history.mae)} s. Bredare intervall fångar fler möten men ger fler falsklarm än fasta ±10 s. Jämför även den kalibrerade historikreferensen.`;
+ }
+ el('eta-training').textContent=`2 400 träningsscener, 600 validering och 600 kalibrering. ${results.fittedCoefficients} tränade koefficienter; modellfil ${results.modelBytes} byte. Träning + urval + kalibrering: ${fmt(results.trainingDurationMs)} ms. CPU, ingen GPU. Process-RSS efter utvärdering: ${fmt(results.memory.rssBytes/1024**2)} MiB.`;
+ el('eta-suite').onchange=()=>{suite=el('eta-suite').value;index=0;stale=false;el('eta-eval-status').textContent='Visar sparade resultat eller senaste lokala utvärdering.';scene();summary();};
+ el('eta-group').onchange=()=>{group=el('eta-group').value;index=0;scene();};el('eta-next').onclick=()=>{index=(index+2)%filtered().length;scene();};el('eta-stale').onclick=()=>{stale=!stale;scene();};
+ el('eta-evaluate').onclick=()=>{const start=performance.now();currentResults={...results,test:evaluateEta(model,datasets.test),shift:evaluateEta(model,datasets.shift)};el('eta-eval-status').textContent=`Ny lokal utvärdering av båda testsviterna: ${fmt(performance.now()-start)} ms. Inga externa anrop.`;summary();};
+ el('eta-export').onclick=()=>{const blob=new Blob([JSON.stringify(currentResults,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='RoadLink-ETA-resultat.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+ scene();summary();el('eta-loading').hidden=true;el('eta-loaded').hidden=false;
+}
+startEta().catch(error=>{el('eta-loading').textContent='ETA-labbet kunde inte starta: '+error.message;});
+</script></body></html>
