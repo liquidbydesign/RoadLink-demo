@@ -1,0 +1,216 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RoadLink · Risklabb</title><style>:root{color-scheme:dark;font-family:'Segoe UI',sans-serif;color:#e8f1f5;background:#0a1420;--aqua:#79d8ca;--muted:#98adbd;--line:#2c4052}*{box-sizing:border-box}body{margin:0}a{color:var(--aqua);text-decoration:none}header{padding:22px 5%;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px}header>a:last-child{margin-left:auto;font-size:13px}.logo{font-size:25px;font-weight:800;color:#edf6fa}.logo span{color:var(--aqua)}.badge,.version{font-size:10px;letter-spacing:1.6px;color:var(--muted)}main{max-width:1440px;padding:38px 5%;margin:auto}.heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:30px}.eyebrow{font-size:10px;letter-spacing:1.8px;color:var(--aqua);font-weight:700}h1{font-size:34px;letter-spacing:-1px;margin:10px 0}h2{font-size:17px;letter-spacing:-.3px;margin:7px 0 16px}p{font-size:13px;line-height:1.75;color:var(--muted)}.layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:24px}.controls,.models article,.batch,.method{border:1px solid var(--line);background:#112131;border-radius:13px;padding:22px}.controls{align-self:start}label{font-size:12px;display:block;margin-top:23px;color:#d2e0e9}label:first-of-type{margin-top:12px}output{float:right;color:var(--aqua)}select{display:block;width:100%;margin-top:9px;background:#1b3043;color:#e8f1f5;border:1px solid #3b566c;border-radius:7px;padding:12px;font:inherit}input[type=range]{width:100%;accent-color:var(--aqua);margin:13px 0 5px}small{font-size:10px;line-height:1.6;color:#8ca4b6;display:block}.muted{font-size:12px;min-height:44px}.notice{border-top:1px solid var(--line);margin-top:24px;padding-top:20px}.notice strong{font-size:12px;color:#d1b780}.notice p{font-size:11px}.controls>button{margin-top:24px;width:100%}button{background:var(--aqua);color:#10252a;border:1px solid transparent;border-radius:7px;padding:11px 17px;font:600 12px 'Segoe UI',sans-serif;cursor:pointer}button:hover{filter:brightness(1.1)}button:disabled{opacity:.55;cursor:wait}.secondary{background:#20374a;color:#bed2df;border-color:#3a5367}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #9deedd;outline-offset:3px}.map-card{background:#101f2d;border:1px solid var(--line);border-radius:13px;overflow:hidden}.map-header{padding:15px 18px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px;color:#a7bccb;border-bottom:1px solid var(--line)}#world{display:block;width:100%;max-height:480px}.legend{display:flex;flex-wrap:wrap;gap:10px 18px;padding:14px 18px;font-size:10px;color:#a7bccb;border-top:1px solid var(--line)}.legend span{display:flex;align-items:center;gap:6px}.legend i{display:inline-block;width:8px;height:12px;border-radius:3px}.ego{background:var(--aqua)}.other{background:#8ebcff}.playback{display:flex;align-items:center;gap:14px;margin:16px 0 21px}.playback input{flex:1;width:40px;margin:0}.playback button{white-space:nowrap}.models{display:grid;grid-template-columns:1fr 1fr;gap:16px}.models article{padding:20px;min-width:0}.models h2{font-size:16px}.models p:not(.eyebrow){min-height:45px;font-size:11px;margin-bottom:16px}.status{display:inline-block;font-size:12px;border-radius:5px;padding:8px 10px;background:#263b4b;color:#cfdee6}.status.conflict{color:#ffd09a;background:#51402b}.status.possible{color:#f4d596;background:#453d2b}.status.unknown{color:#e4b6c0;background:#462e40}dl{font-size:11px;margin:0}dl>div{display:flex;justify-content:space-between;gap:8px;padding:9px 0;border-top:1px solid var(--line)}dt{color:#8da7bb}dd{margin:0;color:#d8e7ed;font-variant-numeric:tabular-nums}.method{padding:18px 20px;margin-top:16px}.method summary{font-size:12px;color:#bad0df;cursor:pointer}.method p{font-size:12px}.batch{margin-top:28px;display:flex;align-items:center;flex-wrap:wrap;gap:15px}.batch>div:first-child{flex:1}.batch h2{font-size:20px;margin-bottom:8px}.batch p{font-size:12px}.batch>button{white-space:nowrap}.batch #batch-result{width:100%;overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:11px;min-width:590px}th,td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line)}th{color:#9ab3c4;font-weight:500}td{font-variant-numeric:tabular-nums}#batch-result .explanation{font-size:11px;max-width:900px}.benchmark-note{color:#e2c58f}footer{font-size:10px;color:#7991a5;margin:28px 0 0}svg text{font-family:'Segoe UI',sans-serif}@media(max-width:1000px){main{padding:27px 4%}.layout{grid-template-columns:245px minmax(0,1fr);gap:15px}.controls{padding:17px}.heading .version{display:none}.models{grid-template-columns:1fr}.models p:not(.eyebrow){min-height:0}}@media(max-width:720px){header{padding:17px 5%;gap:12px}.logo{font-size:22px}.badge{font-size:8px}.heading h1{font-size:27px}.layout{grid-template-columns:1fr}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}.controls h2,.controls>label:first-of-type,.controls #scenario-note,.notice,.controls>button{grid-column:1/-1}.controls label{grid-column:1;margin:10px 0 0}.controls input{grid-column:2;align-self:center}.controls small{grid-column:1/-1}.controls output{float:none;display:block;margin-top:5px}.controls .notice{margin-top:5px;padding-top:15px}.controls .notice p{margin-bottom:0}.playback{gap:8px}.playback button{font-size:10px;padding:10px}.models{grid-template-columns:1fr 1fr;gap:10px}.models article{padding:14px}.models h2{font-size:14px;min-height:34px}.models .status{font-size:10px;padding:7px}.models dl{font-size:10px}.models dl>div{display:block}.models dd{margin-top:4px}.map-header{font-size:8px;padding:12px}.legend{font-size:9px}.batch{padding:18px}.batch h2{font-size:18px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+.ai-link{display:block;margin:0 0 26px;padding:15px 18px;border:1px solid #465579;border-radius:9px;background:#1b2941;color:#cbbdff;font-size:12px;text-decoration:none}.ai-link:hover{background:#273957}#forecast{display:block;width:100%;max-height:520px}.small-note{font-size:12px;color:#adbed0;line-height:1.8}
+</style></head><body>
+<header><a class="logo" href="index.html">↟ Road<span>Link</span></a><span class="badge">RISKLABB</span><a href="index.html">← Till bilvyn</a></header>
+<main><a href="ai-lab.html" class="ai-link">NYTT · Öppna AI-labbet → Tränad rörelsemodell, svängar och bromsning</a><div class="heading"><div><p class="eyebrow">FRÅN GRÄNSSNITT TILL BERÄKNING</p><h1>Vad händer om tio sekunder?</h1><p>Pröva rörelse, osäkerhet och fördröjning med samma trafikdata i två referensmodeller.</p></div><span class="version">0.2 · LOKAL BERÄKNING</span></div>
+<div class="layout"><aside class="controls"><h2>Försöksuppställning</h2><label>Scenario<select id="scenario"></select></label><p id="scenario-note" class="muted"></p>
+<label for="error">Antagen positionsfelgräns <output id="error-value">2 m</output></label><input type="range" id="error" min="0" max="15" step=".5" value="2"><small>Gäller varje fordon. Syntetiskt mätfel läggs till inom gränsen.</small>
+<label for="delay">Meddelandets ålder <output id="delay-value">0,5 s</output></label><input type="range" id="delay" min="0" max="5" step=".1" value=".5"><small>Över 2 sekunder: beräkningen avstår från bedömning.</small>
+<label for="velocity-error">Antaget hastighetsfel <output id="velocity-error-value">0,5 m/s</output></label><input type="range" id="velocity-error" min="0" max="2" step=".1" value=".5"><small>Felgräns i modellen, inte ett simulerat hastighetsfel.</small>
+<label for="horizon">Prognoshorisont <output id="horizon-value">12 s</output></label><input type="range" id="horizon" min="2" max="15" step="1" value="12">
+<button id="reset" class="secondary">Återställ försöket</button><div class="notice"><strong>Referensmodeller, ingen tränad AI.</strong><p>Rak rörelse och cirkulära fordon. Antagna felgränser är inga sannolikheter. Frånvaro av beräknad konflikt betyder inte fri väg.</p></div></aside>
+<section class="experiment"><div class="map-card"><div class="map-header"><span>LOKALT KOORDINATSYSTEM · METER</span><span id="clock">t = 0,0 s</span></div><svg id="world" viewBox="0 0 800 580" role="img" aria-label="Beräknade rörelsebanor och fordon på en simulerad korsning"><defs><pattern id="lab-grid" width="62.5" height="62.5" patternUnits="userSpaceOnUse"><path d="M62.5 0H0V62.5" fill="none" stroke="#263748" stroke-width="1"/></pattern></defs><rect width="800" height="580" fill="#101f2d"/><rect width="800" height="580" fill="url(#lab-grid)"/><path d="M400 0v580M0 290h800" stroke="#263b4d" stroke-width="45"/><path d="M400 0v580M0 290h800" stroke="#6c8293" stroke-width="1" stroke-dasharray="8 10"/><g id="drawing"></g><text x="750" y="30" fill="#a4b7c4" font-size="13">N ↑</text><path d="M40 535h62.5" stroke="#a4b7c4"/><text x="40" y="556" fill="#a4b7c4" font-size="12">50 m</text></svg><div class="legend"><span><i class="ego"></i>Egen bil</span><span><i class="other"></i>Annat fordon</span><span>○ Antagen osäkerhet vid närmaste möte</span><span>⋯ Verkligt förlopp i simulatorn</span></div></div>
+<div class="playback"><button id="play">▶ Spela</button><input type="range" aria-label="Tid i scenariot" id="time" min="0" max="12" step=".1" value="0"><button id="rewind" class="secondary">↺ Från början</button></div>
+<div class="models"><article id="nominal-card"><p class="eyebrow">REFERENS A</p><h2>Konstant hastighet</h2><strong id="nominal-status" class="status"></strong><p id="nominal-detail"></p><dl id="nominal-metrics"></dl></article><article id="bounded-card"><p class="eyebrow">REFERENS B</p><h2>Med antagen osäkerhet</h2><strong id="bounded-status" class="status"></strong><p id="bounded-detail"></p><dl id="bounded-metrics"></dl></article></div>
+<details class="method"><summary>Vad beräknas — och vad saknas?</summary><p>Positioner räknas fram till nu med angiven hastighet och meddelandeålder. Minsta inbördes avstånd och första kontakt mellan två cirkulära fordonsytor beräknas inom prognoshorisonten. Referens B förstorar ytorna med positionsfelgränsen plus hastighetsfelgränsen gånger hela horisonten och meddelandeåldern.</p><p>Det är en konservativ förenkling. Ingen modell för filbyte, sväng, bromsning, vägkoppling eller förare finns ännu. Båda modellerna avstår när data är äldre än 2 sekunder. Streckade banor visar simulatorns kända förlopp; modellerna får endast mätuppgifterna.</p><p>Nästa jämförelsemodell ska tränas på rörelsesekvenser och utvärderas på separata testfall. Den är inte implementerad i den här versionen.</p></details>
+</section></div>
+<section class="batch"><div><p class="eyebrow">REPRODUCERBART FÖRSÖK</p><h2>400 situationer. Samma indata. Två modeller.</h2><p>Fast testsvit med varierade hastigheter, positioner och mätfel. Gränssnittets reglage påverkar inte denna svit.</p></div><button id="run-batch">Kör jämförelse</button><div id="batch-result" hidden></div><button id="download" class="secondary" hidden>Hämta resultat som JSON ↓</button></section>
+<footer>RoadLink · Risklabb 0.2 · Alla fordon och mätvärden är simulerade. Ingen kontakt med verklig trafik.</footer></main><script>// Metres, seconds, x=east and y=north. Circular footprints, constant velocity.
+const ENGINE_VERSION = '0.2.0';
+const DEFAULTS = Object.freeze({ horizon: 12, maxAge: 2, velocityError: 1 });
+
+function validateVehicle(v) {
+  for (const key of ['x', 'y', 'vx', 'vy', 'age', 'accuracy', 'radius']) {
+    if (!Number.isFinite(v?.[key])) throw new TypeError(`Invalid vehicle.${key}`);
+  }
+  if (v.age < 0 || v.accuracy < 0 || v.radius <= 0) throw new RangeError('Invalid vehicle bounds');
+}
+
+function advance(v, seconds) {
+  return { ...v, x: v.x + v.vx * seconds, y: v.y + v.vy * seconds };
+}
+
+// Exact closest approach and first contact for two constant-velocity circles.
+function encounter(a, b, radius, horizon) {
+  if (!Number.isFinite(radius) || radius < 0 || !Number.isFinite(horizon) || horizon <= 0) throw new RangeError('Invalid encounter bounds');
+  const rx = b.x - a.x, ry = b.y - a.y;
+  const vx = b.vx - a.vx, vy = b.vy - a.vy;
+  const vv = vx * vx + vy * vy, dot = rx * vx + ry * vy;
+  const tClosest = vv > 1e-12 ? Math.max(0, Math.min(horizon, -dot / vv)) : 0;
+  const minDistance = Math.hypot(rx + vx * tClosest, ry + vy * tClosest);
+  const c = rx * rx + ry * ry - radius * radius;
+  let tContact = null;
+  if (c <= 0) tContact = 0;
+  else if (vv > 1e-12) {
+    const discriminant = dot * dot - vv * c;
+    if (discriminant >= 0) {
+      const t = (-dot - Math.sqrt(discriminant)) / vv;
+      if (t >= 0 && t <= horizon) tContact = t;
+    }
+  }
+  return { distance: Math.hypot(rx, ry), minDistance, tClosest, tContact, intersects: tContact !== null };
+}
+
+function assess(a, b, options = {}) {
+  validateVehicle(a); validateVehicle(b);
+  const config = { ...DEFAULTS, mode: 'bounded', ...options };
+  if (!['nominal', 'bounded'].includes(config.mode)) throw new RangeError('Invalid mode');
+  if (!Number.isFinite(config.horizon) || config.horizon <= 0 || !Number.isFinite(config.maxAge) || config.maxAge < 0 || !Number.isFinite(config.velocityError) || config.velocityError < 0) throw new RangeError('Invalid options');
+  if (a.age > config.maxAge || b.age > config.maxAge) return { status: 'unknown', reason: 'stale', version: ENGINE_VERSION };
+  const currentA = advance(a, a.age), currentB = advance(b, b.age);
+  const footprint = a.radius + b.radius;
+  const nominal = encounter(currentA, currentB, footprint, config.horizon);
+  // Conservative fixed envelope, using the full prediction horizon. Assumed bounds,
+  // not calibrated confidence intervals or probabilities.
+  const uncertaintyA = a.accuracy + config.velocityError * (a.age + config.horizon);
+  const uncertaintyB = b.accuracy + config.velocityError * (b.age + config.horizon);
+  const envelope = encounter(currentA, currentB, footprint + uncertaintyA + uncertaintyB, config.horizon);
+  return {
+    ...nominal, status: nominal.intersects ? 'conflict' : config.mode === 'bounded' && envelope.intersects ? 'possible' : 'no-conflict',
+    alert: nominal.intersects || config.mode === 'bounded' && envelope.intersects,
+    currentA, currentB, uncertaintyA, uncertaintyB, envelope,
+    version: ENGINE_VERSION,
+  };
+}
+
+const LAB_SCENARIOS = Object.freeze({
+  crossing: { name: 'Korsande trafik', note: 'Båda når korsningen efter tio sekunder.', a: { x: 0, y: -100, vx: 0, vy: 10 }, b: { x: -100, y: 0, vx: 10, vy: 0 } },
+  fast: { name: 'Snabb bil bakifrån', note: 'Bakomvarande bil närmar sig med 12 m/s relativ hastighet.', a: { x: 0, y: -80, vx: 0, vy: 14 }, b: { x: 0, y: -200, vx: 0, vy: 26 } },
+  parallel: { name: 'Parallell körbana', note: 'Tolv meter skiljer körbanorna. Stor osäkerhet kan ge falsklarm.', a: { x: 0, y: -80, vx: 0, vy: 14 }, b: { x: 12, y: -200, vx: 0, vy: 26 } },
+  near: { name: 'Olika ankomsttider', note: 'Vägarna korsas, men fordonen når korsningen vid olika tider.', a: { x: 0, y: -100, vx: 0, vy: 10 }, b: { x: -160, y: 0, vx: 10, vy: 0 } },
+  away: { name: 'Fordonet kör bort', note: 'Närhet ensam innebär inte att ett fordon närmar sig.', a: { x: 0, y: -80, vx: 0, vy: 10 }, b: { x: 0, y: -40, vx: 0, vy: 15 } },
+});
+
+function vehicle(base) { return { radius: 2.5, age: 0, accuracy: 0, ...base }; }
+
+function observe(v, age, accuracy, offset = 0) {
+  // Deterministic synthetic position bias inside the stated error bound.
+  const old = advance(v, -age);
+  return { ...old, age, accuracy, x: old.x + accuracy * .7 * Math.cos(offset), y: old.y + accuracy * .7 * Math.sin(offset) };
+}
+
+function benchmark(count = 400, seed = 20261023) {
+  let randomState = seed >>> 0;
+  const random = () => { randomState = (1664525 * randomState + 1013904223) >>> 0; return randomState / 4294967296; };
+  const score = () => ({ detected: 0, missed: 0, falseAlerts: 0, correctNegatives: 0, unknown: 0, unknownConflicts: 0 });
+  const results = { version: ENGINE_VERSION, seed, count, horizon: 12, description: 'Synthetic constant-velocity cases; geometric truth, no trained AI. Unknown outcomes are reported separately.', truthConflicts: 0, nominal: score(), bounded: score() };
+  const bases = Object.values(LAB_SCENARIOS);
+  for (let i = 0; i < count; i++) {
+    const base = bases[i % bases.length];
+    const a = vehicle({ ...base.a, vy: base.a.vy * (.8 + random() * .4) });
+    const b = vehicle({ ...base.b, x: base.b.x + (random() - .5) * 12, y: base.b.y + (random() - .5) * 30 });
+    const accuracy = random() * 10, age = random() * 3;
+    const oa = observe(a, 0, accuracy, random() * 6.28), ob = observe(b, age, accuracy, random() * 6.28);
+    const truth = encounter(a, b, a.radius + b.radius, 12).intersects;
+    if (truth) results.truthConflicts++;
+    for (const mode of ['nominal', 'bounded']) {
+      const prediction = assess(oa, ob, { mode, velocityError: .5 });
+      const s = results[mode];
+      if (prediction.status === 'unknown') { s.unknown++; if (truth) s.unknownConflicts++; }
+      else if (prediction.alert && truth) s.detected++;
+      else if (prediction.alert) s.falseAlerts++;
+      else if (truth) s.missed++;
+      else s.correctNegatives++;
+    }
+  }
+  return results;
+}
+
+const $ = id => document.getElementById(id);
+const controls = ['scenario', 'error', 'delay', 'velocity-error', 'horizon'];
+let running = false, lastTime = 0, elapsed = 0, batchResult = null;
+const fmt = (n, digits = 1) => Number.isFinite(n) ? n.toLocaleString('sv-SE', { maximumFractionDigits: digits, minimumFractionDigits: digits }) : '—';
+const statusText = { conflict: 'Beräknad konflikt', possible: 'Möjlig konflikt inom felgräns', 'no-conflict': 'Ingen beräknad konflikt', unknown: 'Otillräckligt underlag' };
+
+for (const [key, scene] of Object.entries(LAB_SCENARIOS)) {
+  const option = document.createElement('option'); option.value = key; option.textContent = scene.name; $('scenario').append(option);
+}
+
+function inputs() {
+  const scene = LAB_SCENARIOS[$('scenario').value];
+  const a = advance(vehicle(scene.a), elapsed), b = advance(vehicle(scene.b), elapsed);
+  const error = Number($('error').value), delay = Number($('delay').value);
+  return { scene, a, b, oa: observe(a, 0, error, .7), ob: observe(b, delay, error, 2.2), options: { horizon: Number($('horizon').value), velocityError: Number($('velocity-error').value) } };
+}
+
+function renderCard(mode, result, horizon) {
+  const label = $(mode + '-status'); label.className = 'status ' + result.status; label.textContent = statusText[result.status];
+  $(mode + '-detail').textContent = result.status === 'unknown' ? 'Meddelandet är äldre än 2 s. Ingen slutsats om konflikt eller fri väg.' : mode === 'nominal' ? 'Position tidsjusteras. Hastighet och riktning antas vara oförändrade.' : 'Antagna felgränser kan fånga fler konflikter men också ge fler falsklarm.';
+  const known = result.status !== 'unknown';
+  const metrics = [ ['Horisont', fmt(horizon, 0) + ' s'], ['Avstånd nu', known ? fmt(result.distance) + ' m' : '—'], ['Minsta nominella avstånd', known ? fmt(result.minDistance) + ' m' : '—'], ['Tid till närmaste möte', known ? fmt(result.tClosest) + ' s' : '—'] ];
+  if (mode === 'nominal') metrics.push(['Första nominella kontakt', known && result.tContact !== null ? fmt(result.tContact) + ' s' : '—']);
+  else { metrics.push(['Första kontakt inom felgräns', known && result.envelope.tContact !== null ? fmt(result.envelope.tContact) + ' s' : '—']); metrics.push(['Sammanlagd osäkerhetsradie', known ? fmt(result.uncertaintyA + result.uncertaintyB) + ' m' : '—']); }
+  $(mode + '-metrics').innerHTML = metrics.map(([key, value]) => `<div><dt>${key}</dt><dd>${value}</dd></div>`).join('');
+}
+
+const point = v => ({ x: 400 + v.x * 1.25, y: 290 - v.y * 1.25 });
+function line(a, b, color, dashed = false) {
+  const p = point(a), q = point(b);
+  return `<line x1="${p.x}" y1="${p.y}" x2="${q.x}" y2="${q.y}" stroke="${color}" stroke-width="${dashed ? 1.5 : 3}" opacity="${dashed ? .45 : .9}" ${dashed ? 'stroke-dasharray="3 8"' : ''}/><circle cx="${q.x}" cy="${q.y}" r="4" fill="${color}" opacity=".8"/>`;
+}
+function car(v, color, label, filled = true) {
+  const p = point(v), bearing = Math.atan2(v.vx, v.vy) * 180 / Math.PI;
+  return `<g transform="translate(${p.x} ${p.y})"><g transform="rotate(${bearing})"><rect x="-6" y="-12" width="12" height="24" rx="4" fill="${filled ? color : '#101f2d'}" stroke="${color}" stroke-width="2"/><path d="m-4-4 4-5 4 5" stroke="${filled ? '#173143' : color}" fill="none" stroke-width="2"/></g><text x="15" y="-14" fill="${color}" font-size="12">${label}</text></g>`;
+}
+function draw(data, result) {
+  const { a, b, oa, ob, options } = data;
+  let svg = line(a, advance(a, options.horizon), '#79d8ca', true) + line(b, advance(b, options.horizon), '#8ebcff', true);
+  if (result.status !== 'unknown') {
+    for (const [v, color, radius] of [[result.currentA, '#79d8ca', result.uncertaintyA], [result.currentB, '#8ebcff', result.uncertaintyB]]) {
+      svg += line(v, advance(v, options.horizon), color);
+      const p = point(advance(v, result.tClosest));
+      svg += `<circle cx="${p.x}" cy="${p.y}" r="${radius * 1.25}" fill="${color}" fill-opacity=".08" stroke="${color}" stroke-opacity=".5" stroke-dasharray="5 5"/>`;
+    }
+    svg += car(result.currentA, '#79d8ca', 'EGEN BIL') + car(result.currentB, '#8ebcff', 'FORDON B');
+    if (result.status === 'conflict' || result.status === 'possible') {
+      const pa = point(advance(result.currentA, result.tClosest)), pb = point(advance(result.currentB, result.tClosest));
+      svg += `<line x1="${pa.x}" y1="${pa.y}" x2="${pb.x}" y2="${pb.y}" stroke="#edbc76" stroke-width="2"/><circle cx="${(pa.x + pb.x)/2}" cy="${(pa.y+pb.y)/2}" r="17" fill="none" stroke="#edbc76" stroke-width="2"/>`;
+    }
+  } else {
+    svg += car(oa, '#79d8ca', 'MÄTPUNKT') + car(ob, '#b995a8', 'GAMMAL MÄTPUNKT', false);
+  }
+  $('drawing').innerHTML = svg;
+}
+
+function render() {
+  const data = inputs();
+  $('scenario-note').textContent = data.scene.note;
+  for (const [key, unit, digits] of [['error', 'm', 1], ['delay', 's', 1], ['velocity-error', 'm/s', 1], ['horizon', 's', 0]]) $(key + '-value').textContent = fmt(Number($(key).value), digits) + ' ' + unit;
+  $('clock').textContent = 't = ' + fmt(elapsed) + ' s'; $('time').value = elapsed;
+  const nominal = assess(data.oa, data.ob, { ...data.options, mode: 'nominal' });
+  const bounded = assess(data.oa, data.ob, { ...data.options, mode: 'bounded' });
+  renderCard('nominal', nominal, data.options.horizon); renderCard('bounded', bounded, data.options.horizon); draw(data, bounded);
+  $('play').textContent = running ? 'Ⅱ Pausa' : '▶ Spela';
+}
+
+for (const key of controls) $(key).addEventListener('input', () => { if (key === 'scenario') { elapsed = 0; running = false; } render(); });
+$('time').oninput = () => { elapsed = Number($('time').value); running = false; render(); };
+$('play').onclick = () => { if (elapsed >= 12) elapsed = 0; running = !running; lastTime = 0; render(); };
+$('rewind').onclick = () => { elapsed = 0; running = false; render(); };
+$('reset').onclick = () => { $('scenario').value = 'crossing'; $('error').value = 2; $('delay').value = .5; $('velocity-error').value = .5; $('horizon').value = 12; elapsed = 0; running = false; render(); };
+document.addEventListener('visibilitychange', () => { lastTime = 0; });
+function tick(now) {
+  if (running && !document.hidden) {
+    if (lastTime) elapsed = Math.min(12, elapsed + Math.min(.1, (now - lastTime)/1000));
+    if (elapsed >= 12) running = false;
+    render();
+  }
+  lastTime = now; requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+$('run-batch').onclick = () => {
+  const start = performance.now(); batchResult = benchmark(); const duration = performance.now() - start;
+  batchResult.measuredDurationMs = duration;
+  const rows = [['nominal', 'Konstant hastighet'], ['bounded', 'Med antagen osäkerhet']].map(([key, name]) => { const r = batchResult[key]; return `<tr><td>${name}</td><td>${r.detected}</td><td>${r.missed}</td><td>${r.falseAlerts}</td><td>${r.correctNegatives}</td><td>${r.unknown} (${r.unknownConflicts} konflikter)</td></tr>`; }).join('');
+  $('batch-result').hidden = false;
+  $('batch-result').innerHTML = `<table><thead><tr><th>Modell</th><th>Upptäckta</th><th>Missade</th><th>Falsklarm</th><th>Rätt negativa</th><th>Avstod</th></tr></thead><tbody>${rows}</tbody></table><p class="explanation">${batchResult.count} syntetiska fall · ${batchResult.truthConflicts} geometriska konflikter · seed ${batchResult.seed} · ${fmt(duration)} ms i den här webbläsaren.</p><p class="explanation benchmark-note">Konflikter bland avstådda bedömningar redovisas separat och får inte räknas som lyckade detektioner. Det här testet mäter referensmodellerna under förenklad rak rörelse. Resultatet visar inte verklig trafiksäkerhet eller en tränad AI-modells förmåga.</p><p class="explanation">Båda tidsjusterar positioner och avstår efter 2 s. Skillnaden är den antagna felgränsen. Testsviten innehåller positionsfel och åldrade meddelanden, men inga accelerationer, svängar eller hastighetsmätfel.</p>`;
+  $('download').hidden = false;
+};
+$('download').onclick = () => {
+  if (!batchResult) return;
+  const url = URL.createObjectURL(new Blob([JSON.stringify(batchResult, null, 2)], { type: 'application/json' }));
+  const a = document.createElement('a'); a.href = url; a.download = 'roadlink-risk-benchmark.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+render();
+</script></body></html>
