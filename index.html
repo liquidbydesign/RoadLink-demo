@@ -245,7 +245,8 @@ const messagePresets = [
  ['fuel','Tanklucka','Tankluckan verkar vara öppen.'],
  ['noise','Missljud','Det låter onormalt från din bil.'],
  ['door','Öppen dörr','En dörr eller bakluckan verkar vara öppen.'],
- ['tire','Däck med lite luft','Ett av dina däck ser ut att ha lite luft.']
+ ['tire','Däck med lite luft','Ett av dina däck ser ut att ha lite luft.'],
+ ['you-first','Vid avsmalning','Kör du först']
 ];
 function createMessaging(){return {enabled:true,blocked:[],threads:[],sent:[]};}
 function sendObservation(store,car,preset,now=Date.now()){
@@ -302,7 +303,7 @@ function initMessaging({openModal,closeModal,toast,getScene}){
  }
  function compose(car){
   const c=current(car),blocked=store.blocked.includes(c.id),can=store.enabled&&!blocked&&c.near&&c.age<=10;
-  show('<h2>'+c.plate+'</h2><p>'+c.model+' · '+c.color+' · '+(c.near?c.where:'Utanför testområdet')+'</p><p>Vad har du observerat? Meddelandet är en observation från en förare, ingen verifierad diagnos.</p>'+(!can?'<p class="small-note">Ny kontakt spärrad: '+(!store.enabled?'meddelanden avstängda':blocked?'fordonet blockerat':!c.near?'fordonet är inte i närheten':'uppgifterna är för gamla')+'.</p>':'')+'<div class="message-presets">'+messagePresets.map(p=>'<button data-preset="'+p[0]+'" '+(!can?'disabled':'')+'><strong>'+p[1]+'</strong><small>'+p[2]+'</small></button>').join('')+'</div><div class="message-tools"><button id="message-back">Fordonslista</button><button id="message-block">'+(blocked?'Avblockera':'Blockera')+'</button></div>');
+  show('<h2>'+c.plate+'</h2><p>'+c.model+' · '+c.color+' · '+(c.near?c.where:'Utanför testområdet')+'</p><p>Vad vill du meddela? Välj en observation eller berätta din avsikt.</p>'+(!can?'<p class="small-note">Ny kontakt spärrad: '+(!store.enabled?'meddelanden avstängda':blocked?'fordonet blockerat':!c.near?'fordonet är inte i närheten':'uppgifterna är för gamla')+'.</p>':'')+'<div class="message-presets">'+messagePresets.map(p=>'<button data-preset="'+p[0]+'" '+(!can?'disabled':'')+'><strong>'+p[1]+'</strong><small>'+p[2]+'</small></button>').join('')+'</div><div class="message-tools"><button id="message-back">Fordonslista</button><button id="message-block">'+(blocked?'Avblockera':'Blockera')+'</button></div>');
   document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>confirm(car,b.dataset.preset));
   button('message-back','',list);button('message-block','',()=>{store.blocked=blocked?store.blocked.filter(id=>id!==c.id):[...store.blocked,c.id];compose(car);});
  }
