@@ -18,7 +18,7 @@ Det här är samtidigt en idé som behöver prövas. Hur hanterar vi felaktiga p
 
 ## Prova demonstrationen
 
-En svensk prototyp om delad trafikmedvetenhet. Bilvy och mobilvy, simulerade fordonsmeddelanden med färdiga observationer och tillfälliga svar, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
+En svensk prototyp om delad trafikmedvetenhet. Bilvy och mobilvy, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
 
 All trafik och alla blåljuskällor är simulerade. Ingen position samlas in. Inga verkliga trafikvarningar skickas. Verklig bilintegration och trafikkommunikation är ännu inte anslutna.
 
