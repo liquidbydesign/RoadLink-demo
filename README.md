@@ -4,7 +4,7 @@
 
 [Öppna demonstrationen](https://liquidbydesign.github.io/RoadLink-demo/)
 
-RoadLink är ett utforskande projekt om delad trafikmedvetenhet, framtaget med AI som del av SweClockers och Asus tävling *Gick inte. Nu går det.*, i kategorin **Eget spår**.
+Projektet deltar i tävlingen **Gick inte. Nu går det.** under **Eget spår**. Jag undersöker både möjligheterna och det som går fel när trafikdata och AI ska hjälpa oss att förstå varandras rörelser. Jag har länge haft en idé om ett sånt här system i bakhuvudet, men det är först nu med AI jag verkligen kan få hjälp att ta fram ett gränssnitt och testa förslag på funktioner och scenarier före skarp utveckling av app.
 
 ## Idén bakom RoadLink
 
@@ -20,7 +20,7 @@ Det här är samtidigt en idé som behöver prövas. Hur hanterar vi felaktiga p
 
 ## Prova demonstrationen
 
-En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
+En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, panorerbar karta med Centrera och kantmarkeringar för trafik utanför vyn, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
 
 ## Prova meddelandefunktionen
 
@@ -31,6 +31,12 @@ En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simule
 5. Hitta även dolda meddelanden via **Meddelanden → Konversationer**. Kontakten gäller i 15 minuter från första meddelandet och kan avslutas eller blockeras.
 
 All kommunikation är simulerad och stannar i webbläsarsessionens minne. Testavstånd och fordonsuppgifter är påhittade. Röstinmatning och automatisk hämtning av modell och färg via registreringsnummer är framtida funktioner. Omladdning tömmer meddelandehistoriken.
+
+### Prova kartans nya funktioner
+
+Dra kartan med mus eller finger, eller fokusera kartan och använd piltangenterna. **Centrera** eller Home återställer vyn till din bil. Kameran hålls inom samma simulerade täckningsgräns som kantmarkeringarna använder. Gränsen är streckad och statusen visar när den nås. Detta är ett schematiskt testområde, inte en uppmätt nätverksräckvidd.
+
+Välj **Blåljus närmar sig**, **Blåljus från höger**, **Bil närmar sig snabbt** eller **Fordon framifrån** för att se blå respektive orange kantmarkeringar innan fordonet syns i vyn. Markeringen försvinner när fordonet visas eller underlaget är för gammalt. Panorerar du till fordonet försvinner markeringen även då.
 
 All trafik och alla blåljuskällor är simulerade. Ingen position samlas in. Inga verkliga trafikvarningar skickas. Verklig bilintegration och trafikkommunikation är ännu inte anslutna.
 
