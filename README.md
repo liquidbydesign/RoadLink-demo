@@ -1,6 +1,6 @@
 # RoadLink – interaktiv demo
 
-**Shared awareness. Earlier warnings.**
+**Stay connected - Save lives**
 
 [Öppna demonstrationen](https://liquidbydesign.github.io/RoadLink-demo/)
 
@@ -8,9 +8,9 @@ RoadLink är ett utforskande projekt om delad trafikmedvetenhet, framtaget med A
 
 ## Idén bakom RoadLink
 
-Bilen har använts av oss människor i över hundra år. Ändå är våra möjligheter att förmedla avsikter till andra bilister fortfarande begränsade — ofta till tuta och blinkers. Jag vill undersöka hur vi kan ge trafikanter en bättre förståelse för vad som händer runt dem, med hjälp av en app i mobilen.
+Bilen har använts av oss människor i långt över hundra år. Ändå är våra möjligheter att förmedla avsikter och kommunicera med andra bilister fortfarande begränsade till tuta och blinkers. Jag vill undersöka hur vi kan ge trafikanter en bättre förståelse för vad som händer runt dem och förbättra trafiksäkerheten med en app i mobilen.
 
-Jag vill också göra det möjligt att skicka tydliga meddelanden till andra trafikanter i närheten: uppmärksamma någon på en släckt lampa eller rök från ett hjul, eller säga ”Kör du först” när två bilar väntar vid en avsmalning. Med färdiga meddelanden och på sikt röstinmatning ska föraren kunna förmedla sin observation eller avsikt med få moment. Mottagaren ska kunna svara eller dölja meddelandet, och en tillfällig kontakt ska tillåta svar även efter att bilarna lämnat varandras närhet.
+Jag vill också göra det möjligt att skicka tydliga meddelanden till andra trafikanter i närheten: uppmärksamma någon om en trasig lampa eller rök från ett hjul, eller säga ”Kör du först” när två bilar väntar vid en avsmalning. Med färdiga meddelanden och på sikt röstinmatning ska föraren kunna förmedla sin observation eller avsikt med få moment. Mottagaren ska kunna svara eller dölja meddelandet, och en tillfällig kontakt ska tillåta svar även efter att bilarna lämnat varandras närhet.
 
 Inspirationen kommer från luft- och sjöfartens sätt att dela information om andra flygplan och fartyg i närheten samt varna vid risk för kollision. Tänk om du kunde få en förvarning när en bakomvarande bil närmar sig snabbt, eller när ett utryckningsfordon är på väg mot samma korsning men ännu inte syns. Och tänk om uppgifter om planerade färdvägar kunde hjälpa till att upptäcka möjliga konflikter innan förarna själva ser dem.
 
@@ -20,7 +20,7 @@ Det här är samtidigt en idé som behöver prövas. Hur hanterar vi felaktiga p
 
 ## Prova demonstrationen
 
-En svensk prototyp om delad trafikmedvetenhet. Bilvy och mobilvy, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
+En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
 
 ## Prova meddelandefunktionen
 
