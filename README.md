@@ -20,7 +20,7 @@ Det här är samtidigt en idé som behöver prövas. Hur hanterar vi felaktiga p
 
 ## Prova demonstrationen
 
-En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, panorerbar karta med Centrera och kantmarkeringar för trafik utanför vyn, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
+En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simulerade fordonsmeddelanden med färdiga observationer, inkommande aviseringar och tillfälliga svar, röstkommandon med bekräftelse via webbläsarens taltjänst, panorerbar karta med zoom, Centrera och kantmarkeringar för trafik utanför vyn, ruttbaserade blåljusscenarier och ett körförlopp med fokusvy, ett matematiskt risklabb och ett AI-labb med en liten lokalt tränad rörelsemodell och ett ETA-labb med tränade ankomsttider och kalibrerade intervall.
 
 ## Prova meddelandefunktionen
 
@@ -30,13 +30,19 @@ En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simule
 4. Välj **Testa inkommande meddelande** under uppspelningen. Aviseringen under kartan kan öppnas med **Öppna & svara**, eller döljas med **Dölj**. Ett valt svar bekräftas före sändning.
 5. Hitta även dolda meddelanden via **Meddelanden → Konversationer**. Kontakten gäller i 15 minuter från första meddelandet och kan avslutas eller blockeras.
 
-All kommunikation är simulerad och stannar i webbläsarsessionens minne. Testavstånd och fordonsuppgifter är påhittade. Röstinmatning och automatisk hämtning av modell och färg via registreringsnummer är framtida funktioner. Omladdning tömmer meddelandehistoriken.
+All kommunikation är simulerad och stannar i webbläsarsessionens minne. Testavstånd och fordonsuppgifter är påhittade. Röstinmatning kan nu provas där webbläsaren stöder taligenkänning. Automatisk hämtning av modell och färg via registreringsnummer är en framtida funktion. Omladdning tömmer meddelandehistoriken.
 
 ### Prova kartans nya funktioner
 
-Dra kartan med mus eller finger, eller fokusera kartan och använd piltangenterna. **Centrera** eller Home återställer vyn till din bil. Kameran hålls inom samma simulerade täckningsgräns som kantmarkeringarna använder. Gränsen är streckad och statusen visar när den nås. Detta är ett schematiskt testområde, inte en uppmätt nätverksräckvidd.
+Dra kartan med mus eller finger, eller fokusera kartan och använd piltangenterna. Zooma med **+ / −**. Standardvyn är bredare och kartområdet större åt alla håll. **Centrera** visas bara när vyn avviker och återställer både följning av din bil och standardzoom. Även Home återställer båda. Kameran hålls inom samma simulerade täckningsgräns som kantmarkeringarna använder. Gränsen är streckad och statusen visar när den nås. Detta är ett schematiskt testområde, inte en uppmätt nätverksräckvidd.
 
 Välj **Blåljus närmar sig**, **Blåljus från höger**, **Bil närmar sig snabbt** eller **Fordon framifrån** för att se blå respektive orange kantmarkeringar innan fordonet syns i vyn. Markeringen försvinner när fordonet visas eller underlaget är för gammalt. Panorerar du till fordonet försvinner markeringen även då.
+
+### Prova röststyrningen
+
+Öppna mikrofonknappen och välj **Lyssna** för ett kommando i taget. I Normal körning: säg **Välj ABC 123**, sedan **Trasig lampa** eller **Diktera** följt av text. Kontrollera mottagare och meddelande; ett separat **Skicka** krävs för demosändning. **Avbryt** skickar inget. Prova även **Läs upp**, **Svara tack**, **Centrera**, **Zooma in** och **Zooma ut**. Mikrofonen kan öppnas även i meddelandedialogen.
+
+Mikrofonbehörighet och stöd för taligenkänning krävs; använd helst HTTPS-demon eller localhost. Webbläsarens taltjänst kan behandla ljud externt och kräva internet. RoadLink sparar ingen ljudinspelning och detta är inte verifierad lokal tal-AI. Det märkta **texttestet** använder samma kommandotolk utan mikrofon och testar inte taligenkänning. Faktisk mikrofon, uttal och träffsäkerhet återstår att prova på användarens enhet.
 
 All trafik och alla blåljuskällor är simulerade. Ingen position samlas in. Inga verkliga trafikvarningar skickas. Verklig bilintegration och trafikkommunikation är ännu inte anslutna.
 
