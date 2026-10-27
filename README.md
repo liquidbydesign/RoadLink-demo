@@ -44,7 +44,7 @@ Aktivera mikrofonen till höger om **Rapportera** eller inne i en dialog en gån
 
 Ramen roterar vid lyssning. Under uppläsning pausas mikrofonen och återupptas när uppläsningen är klar. Mikrofonknappen igen stänger av. Krysset, Escape, **Avbryt** eller **Stäng dialogen** avslutar också. Dialogbyten fortsätter samtalet, stängd dialog avslutar det. Tjänstfel avslutar läget med återkoppling. Inställningen för automatisk start är borttagen.
 
-Prova även **Läs upp**, **Svara tack**, **Centrera**, **Zooma in** och **Zooma ut**.
+Prova även **Läs upp**, **Svara tack**, **Centrera**, **Zooma in** och **Zooma ut**. Under Rapportera finns nu också **Påkört djur på vägbana.** och **Okänt föremål på vägbana.**, mellan Stillastående fordon och Blåljus observerat. De kan väljas med rösten och kräver separat bekräftelse.
 
 Mikrofonbehörighet och stöd för taligenkänning krävs; använd helst HTTPS-demon eller localhost. Webbläsarens taltjänst kan behandla ljud externt och kräva internet. RoadLink sparar ingen ljudinspelning och detta är inte verifierad lokal tal-AI. Det märkta **texttestet** använder samma kommandotolk utan mikrofon och testar inte taligenkänning. Användaren har bekräftat fungerande taligenkänning i Chrome efter ett tidigare nätverksfel i den inbyggda webbläsaren. Det nya samtalsläget testas med simulerad taltjänst; upprepade samtal behöver fortsatt provas på användarens enhet. Felet inträffar innan någon text når kommandotolken. Kontrollera internet och mikrofonbehörighet och prova en vanlig webbläsare med svensk taligenkänning, exempelvis aktuell Chrome. Det finns ingen garanti att webbläsarbyte löser felet; kvarstående fel kräver en annan talmotor.
 
