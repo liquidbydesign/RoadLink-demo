@@ -32,6 +32,12 @@ En svensk prototyp om delad trafikmedvetenhet. Bilskärm och mobilskärm, simule
 
 All kommunikation är simulerad och stannar i webbläsarsessionens minne. Testavstånd och fordonsuppgifter är påhittade. Röstinmatning kan nu provas där webbläsaren stöder taligenkänning. Automatisk hämtning av modell och färg via registreringsnummer är en framtida funktion. Omladdning tömmer meddelandehistoriken.
 
+### Prova två förarperspektiv
+
+Under kartan finns **Prova båda perspektiven**. Förare A upptäcker rök vid ett hjul på förare B:s bil. Välj observation, kontrollera mottagaren och skicka i demo. Öppna meddelandet i B:s vy, förbered och bekräfta svaret, och läs det i A:s vy. Oläst-markeringen följer respektive förare. **Spela hela förloppet** visar samma sex steg automatiskt; **Pausa förloppet** och **Börja om** ger kontroll över visningen.
+
+Alla fordon och överföringar är simulerade. Förloppet är separat från bilskärmens meddelandehistorik och återställs när demon öppnas igen. Det använder samma regler för sändning och tillfälliga svar som övriga meddelandedemon. Ingen verklig kommunikation eller röststyrning mellan de två vyerna är ansluten.
+
 ### Prova kartans nya funktioner
 
 Dra kartan med mus eller finger, eller fokusera kartan och använd piltangenterna. Zooma med **+ / −**. Standardvyn är bredare och kartområdet större åt alla håll. **Centrera** visas bara när vyn avviker och återställer både följning av din bil och standardzoom. Även Home återställer båda. Kameran hålls inom samma simulerade täckningsgräns som kantmarkeringarna använder. Gränsen är streckad och statusen visar när den nås. Detta är ett schematiskt testområde, inte en uppmätt nätverksräckvidd.
